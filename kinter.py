@@ -12,7 +12,8 @@ root.title("Start Backend Module")
 def caller():
     label1 = tk.Label(root, text='Running ...', fg='green', font=('helvetica', 12, 'bold'))
     canvas1.create_window(150, 200, window=label1)
-    call(["python",os.path.join(os.getcwd(),'backend','app.py')])
+    os.chdir('../')
+    call(["python",os.path.join(os.getcwd(),'fuprox_desktop_backend','app.py')])
     return {}
 
 
